@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:lapis_lazuli",
+    "minecraft:gunpowder",
+    "minecraft:leather"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_1230",
+    "count": 1
+  }
+}

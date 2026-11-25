@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "scpfoundation:containment_wall",
+    "minecraft:redstone",
+    "scpfoundation:keycard_3"
+  ],
+  "result": {
+    "id": "scpfoundation:keycard_door_3",
+    "count": 1
+  }
+}

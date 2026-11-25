@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:gold_ingot",
+    "minecraft:redstone",
+    "minecraft:feather",
+    "minecraft:honeycomb"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_0726",
+    "count": 1
+  }
+}

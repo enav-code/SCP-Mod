@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "scpfoundation:containment_wall",
+    "minecraft:glowstone"
+  ],
+  "result": {
+    "id": "scpfoundation:containment_lamp",
+    "count": 1
+  }
+}

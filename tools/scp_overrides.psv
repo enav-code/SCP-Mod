@@ -1,0 +1,54 @@
+# n|name|class|form|behaviors (semicolon separated)
+# Hand-authored entries. Anything not listed here is generated as a procedural stand-in.
+# Edit or extend this file with the real names/classes from the wiki, then re-run tools/generate_resources.py
+# Forms: item | entity | block
+# Entity behaviors: WATCHED_FREEZE TELEPORT_STRIKE FIRE_AURA POISON_TOUCH REGEN DARKNESS_AURA HEAL_AURA RAGE_WHEN_LOOKED WEAKEN_TOUCH WITHER_AURA LEVITATE_TOUCH FAST BLINK BLIND_STARE SLOW_FIELD THORNS EXPLODE_ON_DEATH SUMMON_MINIONS PASSIVE PULL_PLAYERS
+# Item behaviors:   HEAL SPEED_BURST NIGHT_VISION LEVITATE_SELF BLINK REGENERATION FIRE_PROOF STRENGTH FEED REPEL ABSORB_COST RESIST
+# Block behaviors:  LAUNCH_PAD HARM_ON_STEP SLOW_ON_STEP USE_EFFECT USE_TELEPORT USE_LOOT HEAL_ON_USE
+0|Classified Record|Thaumiel|item|ABSORB_COST;RESIST
+2|The "Living" Room|Euclid|block|HARM_ON_STEP
+3|Biological Motherboard|Euclid|block|HEAL_ON_USE
+8|Zombie Plague|Keter|entity|WEAKEN_TOUCH;SUMMON_MINIONS
+12|A Bad Composition|Euclid|item|ABSORB_COST
+17|Shadow Person|Euclid|entity|DARKNESS_AURA;WITHER_AURA;BLINK
+23|Black Dog|Euclid|entity|DARKNESS_AURA;FAST
+35|Possessive Mask|Keter|item|STRENGTH;ABSORB_COST
+49|Plague Doctor|Euclid|entity|WEAKEN_TOUCH;POISON_TOUCH;SUMMON_MINIONS
+55|[DATA EXPUNGED]|Keter|entity|BLIND_STARE;BLINK
+58|Heart of Darkness|Euclid|entity|DARKNESS_AURA;WITHER_AURA
+66|Eric's Toy|Euclid|item|REPEL
+76|Able|Keter|entity|FAST;THORNS
+79|Old AI|Euclid|block|USE_LOOT
+82|Fernand the Cannibal|Euclid|entity|REGEN;WEAKEN_TOUCH
+87|The Stairwell|Euclid|block|USE_TELEPORT
+93|Red Sea Object|Keter|entity|DARKNESS_AURA;SLOW_FIELD
+96|The "Shy Guy"|Euclid|entity|RAGE_WHEN_LOOKED;FAST
+105|Iris|Safe|item|NIGHT_VISION
+106|The Old Man|Keter|entity|SLOW_FIELD;WITHER_AURA;REGEN
+109|Inexhaustible Canteen|Safe|item|FEED;REGENERATION
+131|The "Eye Pods"|Safe|entity|PASSIVE;HEAL_AURA
+173|The Sculpture|Euclid|entity|WATCHED_FREEZE;TELEPORT_STRIKE
+179|Sungazer|Euclid|entity|BLIND_STARE;PASSIVE
+216|Safe Safe|Safe|block|USE_LOOT
+231|Special Personnel Requirements|Keter|entity|SUMMON_MINIONS;REGEN
+294|The Coffee Machine|Safe|block|USE_EFFECT
+330|Take Only Two|Euclid|block|HARM_ON_STEP
+426|I am a Toaster|Euclid|block|USE_LOOT
+457|The Burning Man|Euclid|entity|FIRE_AURA
+500|Panacea|Safe|item|HEAL;REGENERATION
+513|Cowbell|Euclid|item|REPEL;ABSORB_COST
+610|The Flesh That Hates|Keter|entity|SLOW_FIELD;POISON_TOUCH;REGEN
+682|Hard-to-Destroy Reptile|Keter|entity|REGEN;THORNS;FAST
+714|The Jaded Ring|Euclid|item|RESIST;ABSORB_COST
+860|The Blue Key|Euclid|block|USE_TELEPORT
+882|A Machine|Euclid|block|LAUNCH_PAD
+914|The Clockworks|Safe|block|USE_LOOT
+939|With Many Voices|Euclid|entity|BLINK;FAST
+966|Sleep Killer|Euclid|entity|DARKNESS_AURA;WEAKEN_TOUCH
+999|The Tickle Monster|Safe|entity|PASSIVE;HEAL_AURA
+1000|Bigfoot|Euclid|entity|FAST;REGEN
+1048|Builder Bear|Euclid|entity|WEAKEN_TOUCH
+1440|The Old Man from Nowhere|Euclid|entity|WITHER_AURA;BLINK
+1471|MalO ver1.0.0|Euclid|entity|BLIND_STARE;BLINK;DARKNESS_AURA
+1981|Ronald Reagan Cut Up While Talking|Keter|entity|PULL_PLAYERS;SLOW_FIELD
+2000|Deus Ex Machina|Thaumiel|block|HEAL_ON_USE;USE_EFFECT

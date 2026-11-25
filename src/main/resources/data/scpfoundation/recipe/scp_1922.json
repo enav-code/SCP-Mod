@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:coal",
+    "minecraft:amethyst_shard",
+    "minecraft:spider_eye"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_1922",
+    "count": 1
+  }
+}

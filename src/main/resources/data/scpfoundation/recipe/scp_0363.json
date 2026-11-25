@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:diamond",
+    "minecraft:redstone",
+    "minecraft:coal",
+    "minecraft:rotten_flesh"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_0363",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:diamond",
+    "minecraft:redstone",
+    "minecraft:gunpowder",
+    "minecraft:prismarine_shard"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_1514",
+    "count": 1
+  }
+}

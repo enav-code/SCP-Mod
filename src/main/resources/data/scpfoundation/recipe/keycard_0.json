@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:iron_ingot"
+  ],
+  "result": {
+    "id": "scpfoundation:keycard_0",
+    "count": 1
+  }
+}

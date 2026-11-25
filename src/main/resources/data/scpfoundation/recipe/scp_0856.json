@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:gold_ingot",
+    "minecraft:redstone",
+    "minecraft:honeycomb",
+    "minecraft:fermented_spider_eye"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_0856",
+    "count": 1
+  }
+}

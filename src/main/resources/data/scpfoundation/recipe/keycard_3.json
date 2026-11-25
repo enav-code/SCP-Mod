@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "scpfoundation:keycard_2",
+    "minecraft:diamond"
+  ],
+  "result": {
+    "id": "scpfoundation:keycard_3",
+    "count": 1
+  }
+}

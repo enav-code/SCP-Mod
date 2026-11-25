@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:gold_ingot",
+    "minecraft:lapis_lazuli",
+    "minecraft:prismarine_shard",
+    "minecraft:honeycomb"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_1451",
+    "count": 1
+  }
+}

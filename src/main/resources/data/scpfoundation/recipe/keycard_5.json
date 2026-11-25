@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "scpfoundation:keycard_4",
+    "minecraft:nether_star"
+  ],
+  "result": {
+    "id": "scpfoundation:keycard_5",
+    "count": 1
+  }
+}

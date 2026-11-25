@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:lapis_lazuli",
+    "minecraft:amethyst_shard",
+    "minecraft:string"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_1143",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "SIS",
+    "ISI",
+    "SIS"
+  ],
+  "key": {
+    "S": "minecraft:smooth_stone",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "scpfoundation:containment_wall",
+    "count": 8
+  }
+}

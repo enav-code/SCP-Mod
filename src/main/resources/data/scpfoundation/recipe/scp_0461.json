@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:redstone",
+    "minecraft:string",
+    "minecraft:prismarine_shard"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_0461",
+    "count": 1
+  }
+}

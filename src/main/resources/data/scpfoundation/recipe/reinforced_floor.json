@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "scpfoundation:containment_wall",
+    "minecraft:iron_ingot"
+  ],
+  "result": {
+    "id": "scpfoundation:reinforced_floor",
+    "count": 2
+  }
+}

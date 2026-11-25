@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:gold_ingot",
+    "minecraft:redstone",
+    "minecraft:copper_ingot",
+    "minecraft:slime_ball"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_0125",
+    "count": 1
+  }
+}

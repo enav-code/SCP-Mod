@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:lapis_lazuli",
+    "minecraft:rotten_flesh",
+    "minecraft:phantom_membrane"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_1575",
+    "count": 1
+  }
+}

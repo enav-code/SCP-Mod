@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "scpfoundation:block/keycard_door_4_closed"
+    },
+    "open=true": {
+      "model": "scpfoundation:block/keycard_door_4_open"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:diamond",
+    "minecraft:redstone",
+    "minecraft:quartz",
+    "minecraft:paper"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_0939",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:diamond",
+    "minecraft:redstone",
+    "minecraft:gunpowder",
+    "minecraft:leather"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_1534",
+    "count": 1
+  }
+}

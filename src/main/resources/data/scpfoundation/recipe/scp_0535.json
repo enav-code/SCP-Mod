@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:gold_ingot",
+    "minecraft:redstone",
+    "minecraft:ender_pearl",
+    "minecraft:feather"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_0535",
+    "count": 1
+  }
+}

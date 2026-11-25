@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:lapis_lazuli",
+    "minecraft:glowstone_dust",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_1200",
+    "count": 1
+  }
+}

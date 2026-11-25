@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "scpfoundation:keycard_3",
+    "minecraft:netherite_ingot"
+  ],
+  "result": {
+    "id": "scpfoundation:keycard_4",
+    "count": 1
+  }
+}

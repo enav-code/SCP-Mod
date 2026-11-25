@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "scpfoundation",
+  "version": "${version}",
+  "name": "SCP Foundation",
+  "description": "SCP-0000 to SCP-2000 as items, entities and blocks, plus Foundation facility blocks, keycards and containment tools. SCP Foundation content is CC BY-SA 3.0 (scp-wiki.wikidot.com).",
+  "authors": ["You"],
+  "license": "CC-BY-SA-3.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.scpfoundation.ScpMod"],
+    "client": ["com.scpfoundation.client.ScpModClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

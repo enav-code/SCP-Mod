@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:diamond",
+    "minecraft:redstone",
+    "minecraft:bone",
+    "minecraft:flint"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_1717",
+    "count": 1
+  }
+}

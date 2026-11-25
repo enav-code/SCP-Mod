@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "scpfoundation:containment_wall",
+    "minecraft:yellow_dye",
+    "minecraft:black_dye"
+  ],
+  "result": {
+    "id": "scpfoundation:hazard_stripe",
+    "count": 2
+  }
+}

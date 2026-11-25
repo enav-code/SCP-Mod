@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:emerald",
+    "minecraft:redstone",
+    "minecraft:lapis_lazuli",
+    "minecraft:glowstone_dust"
+  ],
+  "result": {
+    "id": "scpfoundation:scp_0378",
+    "count": 1
+  }
+}
