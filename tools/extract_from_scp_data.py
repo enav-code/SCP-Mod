@@ -98,7 +98,8 @@ def main(repo):
         height, src = find_height(desc_cut)
         colors = [c for c in COLORS if re.search(r"\b" + c + r"\b", desc_cut[:2500], re.I)][:3]
         out[str(n)] = {"cls": cls, "tags": [t for t in tags if not t.startswith("_")], "height": height,
-                       "height_src": src, "colors": colors}
+                       "height_src": src, "colors": colors,
+                       "desc": re.sub(r"\s+", " ", desc_cut)[:700].strip()}
     (ROOT / "tools/scp_wiki_data.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
     print(f"{len(out)} SCPs: class {sum(1 for x in out.values() if x['cls'])}, "
           f"height {sum(1 for x in out.values() if x['height'])} "

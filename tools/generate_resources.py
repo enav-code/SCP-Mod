@@ -258,7 +258,7 @@ def procedural(n, wiki=None, title=""):
     return dict(name=f"SCP-{n:04d}", cls=cls, form=form, behaviors=beh)
 
 
-def texture(n, cls, form, title=""):
+def texture(n, cls, form, rows):
     r = random.Random(n * 31 + 7)
     base = CLASS_COLORS[cls]
     img = Image.new("RGBA", (16, 16))
@@ -278,7 +278,6 @@ def texture(n, cls, form, title=""):
         for i in range(2, 14):
             for (x, y) in ((i, 2), (i, 13), (2, i), (13, i)):
                 px[x, y] = (*base, 255)
-    _, rows = icons.pixels(n, title)
     light = tuple(min(255, int(v * 0.55 + 140)) for v in base)
     for dy, row in enumerate(rows):  # 8x8 icon, top
         for dx, ch in enumerate(row):
@@ -381,6 +380,7 @@ def main():
         n_scaled += scale != 1.0
         hp, dmg, _ = CLASS_STATS[cls]
         i = sid(n)
+        icon_name, icon_rows = icons.pixels(n, title, w.get("tags"), w.get("desc", ""))
         k = class_counter.get(cls, 0)
         class_counter[cls] = k + 1
         recipe = [TIER_ITEM[cls]] + [f"minecraft:{x}" for x in COMBOS[k]]
@@ -388,7 +388,7 @@ def main():
                                           "ingredients": recipe, "result": {"id": f"{MODID}:{i}", "count": 1}})
         entries.append(dict(n=n, id=i, name=title, cls=cls, form=form, canon=(n in over) or bool(w.get('cls')),
                             behaviors=beh, hp=hp, dmg=dmg, recipe=recipe, scale=scale, height=height or 0, size_src=size_src,
-                            icon=icons.pixels(n, title)[0]))
+                            icon=icon_name))
         if form == "entity":
             skin_file = custom / f"scp_{n:04d}_skin.png"
             if skin_file.exists():
@@ -398,7 +398,7 @@ def main():
         label = f"SCP-{n:04d}: {title}"
         kind = "block" if form == "block" else "item"
         lang[f"{kind}.{MODID}.{i}"] = label
-        img = texture(n, cls, form, title)
+        img = texture(n, cls, form, icon_rows)
         tile_file = custom / f"scp_{n:04d}.png"
         if tile_file.exists():
             img = Image.open(tile_file).convert("RGBA")

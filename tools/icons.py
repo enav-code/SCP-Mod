@@ -195,8 +195,53 @@ def icon_for(n, title):
     return None
 
 
+TAG_ICON = {"tree": "tree", "plant": "tree", "bird": "bird", "feline": "cat", "canine": "dog", "insect": "bug",
+            "arachnid": "spider", "aquatic": "fish", "reptilian": "snake", "humanoid": "human", "fire": "flame",
+            "portal": "door", "building": "house", "location": "house", "sound": "note", "auditory": "note",
+            "visual": "eye", "optical": "eye", "document": "book", "text": "book", "literature": "book", "key": "key",
+            "temporal": "clock", "mirror": "mirror", "toy": "doll", "doll": "doll", "liquid": "drop", "water": "drop",
+            "electronic": "computer", "computer": "computer", "vehicle": "vehicle", "weapon": "sword", "medical": "pill",
+            "ghost": "ghost", "spirit": "ghost", "contagion": "pill", "biological": "heart", "cadaver": "skull",
+            "death": "skull", "mask": "mask", "music": "note", "photographic": "camera", "audio": "note",
+            "video": "tv", "television": "tv", "clothing": "mask", "jewelry": "ring", "mechanical": "gear",
+            "machine": "gear", "tool": "gear", "container": "box", "food": "bottle", "weather": "cloud",
+            "astronomical": "star", "space": "star", "metal": "gear", "crystal": "ring", "snake": "snake",
+            "fungus": "mushroom", "mammalian": "dog", "fish": "fish", "swarm": "bug", "extradimensional": "door",
+            "tower": "tower", "lock": "lock", "money": "coin", "egg": "egg", "mimic": "box", "sapient": "human",
+            "child": "human", "avian": "bird", "amphibian": "fish", "cold": "cloud", "radioactive": "flame",
+            "explosive": "flame", "fear": "ghost", "darkness": "ghost", "shadow": "ghost"}
+NO_DESC = {"human", "box", "hand", "house", "heart", "dog", "gear", "book"}   # too common in running text
+
+
+def best_icon(n, title, tags=None, desc=""):
+    """Score every icon: title hits x3, wiki tag hits x3, description hits x1 (min score 3)."""
+    ttoks, ttext = _tokens(title), title.lower()
+    tag_list = [t.lower() for t in (tags or [])]
+    tag_toks = [w for t in tag_list for w in t.replace("-", " ").split()] + tag_list
+    dtoks, dtext = _tokens(desc), desc.lower()
+    score = {}
+    for order, (kws, icon) in enumerate(RULES):
+        sc = 0
+        for k in kws:
+            if _hit(k, ttoks, ttext):
+                sc += 3
+            if tag_toks and _hit(k, tag_toks, " ".join(tag_toks)):
+                sc += 2
+            if desc and icon not in NO_DESC and _hit(k, dtoks, dtext):
+                sc += 1
+        if sc:
+            score[icon] = max(score.get(icon, 0), sc) if icon in score else sc
+    for t in tag_list:
+        if t in TAG_ICON:
+            score[TAG_ICON[t]] = score.get(TAG_ICON[t], 0) + 3
+    if not score:
+        return None
+    icon = max(score, key=lambda k: (score[k], -[r[1] for r in RULES].index(k) if k in [r[1] for r in RULES] else 0))
+    return icon if score[icon] >= 3 else None
+
+
 def glyph(n):
-    """Unique symmetric 8x8 glyph, seeded by SCP number (for titles with no keyword)."""
+    """Unique symmetric 8x8 glyph, seeded by SCP number (for SCPs where nothing matches)."""
     r = random.Random(n * 1315423911 & 0xFFFFFFFF)
     rows = []
     for _ in range(8):
@@ -205,8 +250,8 @@ def glyph(n):
     return rows
 
 
-def pixels(n, title):
-    name = icon_for(n, title)
+def pixels(n, title, tags=None, desc=""):
+    name = best_icon(n, title, tags, desc)
     rows = ICONS[name] if name else glyph(n)
     return name or "glyph", rows
 
